@@ -31,13 +31,24 @@
         
         <header class="jumbotron jumbotron-fluid">
             <div class="container">
-                <div class="row">
-                    <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                <div class="row align-items-center">
+                    <div class="col-4 col-sm-3 col-md-2">
                         <img src="img/logo.png" class="img-fluid" />
                     </div>
                     <div class="col">
                         <h1>NuCamp</h1>
                         <h2>a better way to camp</h2>
+                    </div>
+                    <div 
+                        class="col 
+                            col-md-4 col-xl-2 col-xs-12 align-items-center">
+                        <a href="#reserveForm" class="text-nowrap">
+                            <button 
+                                class="btn btn-info btn-lg"
+                                type="button">
+                                Reserve Form
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -112,11 +123,19 @@
                     <h2>Featured Campsites</h2>
                 </div>
                 <div class="col">
-                    <h3>React Lake Campground</h3>
-                    <p class="d-none d-sm-block">
-                        Nestled in the foothills of the Chrome Mountains, this 
-                        campground on the shores of the pristine React Lake  is a favorite for fly fishers.
-                    </p>
+                    <div class="media">
+                        <div class="media-body align-self-center">
+                            <h3>React Lake Campground</h3>
+                            <p class="d-none d-sm-block">
+                                Nestled in the foothills of the Chrome Mountains, this 
+                                campground on the shores of the pristine React Lake  is a favorite for fly fishers.
+                            </p>
+                        </div>
+                        <img 
+                            class="d-flex ml-3 img-thumbnail" 
+                            src="img/react-lake-thumb.jpg"
+                            alt="React Lake" />
+                    </div>
                 </div>
             </div>
 
@@ -138,6 +157,67 @@
                         </div>
                     </div>
                 </div>   
+            </div>
+            <div class="row row-content">
+                <div class="col-sm-6 mx-auto">
+                    <div class="card">
+                        <h3 class="card-header bg-info text-white">
+                            Reserve a Campsite
+                        </h3>
+                        <div class="card-body">
+                            <form id="reserveForm">
+                                <div class="row form-group">
+                                    <label 
+                                        class="col-sm-6 
+                                        col-xs-12 col-form-label"
+                                        for="numCampers">
+                                        Number of Campers
+                                    </label>
+                                    <div class="col col-xs-12">
+                                        <select 
+                                            name="numCampers" 
+                                            id="numCampers"
+                                            class="form-control">
+                                            <option>Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label 
+                                        for="date"
+                                        class="col-sm-6 
+                                            col-xs-12 
+                                            col-form-label">
+                                        Date
+                                    </label>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <input 
+                                            type="date" 
+                                            id="date"
+                                            class="form-control" 
+                                            name="date" 
+                                            placeholder="mm/dd/yyyy"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col">
+                                        <button 
+                                            type="submit" 
+                                            class="btn btn-primary">
+                                            Search
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="site-footer">
