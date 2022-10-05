@@ -39,3 +39,9 @@ header h2 {
 .aboutus-heading {
     padding-top: 10px;
 }
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
