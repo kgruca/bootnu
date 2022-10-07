@@ -42,16 +42,10 @@
                     <div 
                         class="col-md-4 col-xl-2 mt-4">
                         <a 
-                            href="#reserveForm" 
-                            data-toggle="tooltip"
-                            data-html="true"
-                            data-placement="bottom"
                             role="button"
                             class="btn btn-lg btn-info text-nowrap"
-                            title="Or call us at
-                            <strong>
-                                1-206-555-1234
-                            </strong>">
+                            data-toggle="modal"
+                            data-target="#reserveModal">
                                 Reserve Form
                         </a>
                     </div>
@@ -447,12 +441,6 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-        <script>
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
 
     </body>
 </html>
