@@ -1,0 +1,10 @@
+{
+    "[markdown]": {
+        "editor.wordWrapColumn": 240,
+        "diffEditor.wordWrap": "off",
+        "editor.wordWrap": "off"
+    },
+    "editor.wordWrapColumn": 240,
+    "html.format.wrapLineLength": 240,
+    "diffEditor.wordWrap": "off"
+}
